@@ -8863,7 +8863,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"width": 73.67724609375,
+											"width": 77.9365234375,
 											"height": 13,
 											"text": "(from Model)"
 										},
@@ -9127,7 +9127,7 @@
 												"$ref": "AAAAAAGAceDqwUqrtus="
 											},
 											"font": "Arial;13;1",
-											"left": 680,
+											"left": 680.5,
 											"top": 914,
 											"width": 81,
 											"height": 13,
@@ -9141,7 +9141,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"width": 73.67724609375,
+											"width": 77.9365234375,
 											"height": 13,
 											"text": "(from Model)"
 										},
@@ -9158,7 +9158,7 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 675,
+									"left": 675.5,
 									"top": 907,
 									"width": 91.61181640625,
 									"height": 25,
@@ -9250,7 +9250,7 @@
 							"containerChangeable": true,
 							"left": 656,
 							"top": 888,
-							"width": 129,
+							"width": 130,
 							"height": 64,
 							"nameCompartment": {
 								"$ref": "AAAAAAGAceDqwUqrtus="
@@ -9324,7 +9324,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"width": 73.67724609375,
+											"width": 77.9365234375,
 											"height": 13,
 											"text": "(from Model)"
 										},
@@ -9683,9 +9683,9 @@
 												"$ref": "AAAAAAGAceS1Y49TJeI="
 											},
 											"font": "Arial;13;1",
-											"left": 459.5,
+											"left": 460,
 											"top": 1118,
-											"width": 98,
+											"width": 99,
 											"height": 13,
 											"text": "포인트 적립 기능"
 										},
@@ -9697,7 +9697,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"width": 73.67724609375,
+											"width": 77.9365234375,
 											"height": 13,
 											"text": "(from Model)"
 										},
@@ -9714,9 +9714,9 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 454.5,
+									"left": 455,
 									"top": 1111,
-									"width": 108.2236328125,
+									"width": 109,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGAceS1Y49UdxM="
@@ -9806,7 +9806,7 @@
 							"containerChangeable": true,
 							"left": 432,
 							"top": 1088,
-							"width": 153,
+							"width": 155,
 							"height": 72,
 							"nameCompartment": {
 								"$ref": "AAAAAAGAceS1Y49TJeI="
@@ -10097,6 +10097,101 @@
 							},
 							"headQualifiersCompartment": {
 								"$ref": "AAAAAAGAceToSpq1jhY="
+							}
+						},
+						{
+							"_type": "UMLUseCaseSubjectView",
+							"_id": "AAAAAAGAcmY95/oRYcA=",
+							"_parent": {
+								"$ref": "AAAAAAGAaXhWGXt9KmM="
+							},
+							"model": {
+								"$ref": "AAAAAAGAcmY95voPfIQ="
+							},
+							"subViews": [
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "AAAAAAGAcmY95/oStzE=",
+									"_parent": {
+										"$ref": "AAAAAAGAcmY95/oRYcA="
+									},
+									"model": {
+										"$ref": "AAAAAAGAcmY95voPfIQ="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGAcmY95/oTixs=",
+											"_parent": {
+												"$ref": "AAAAAAGAcmY95/oStzE="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGAcmY95/oUSzY=",
+											"_parent": {
+												"$ref": "AAAAAAGAcmY95/oStzE="
+											},
+											"font": "Arial;13;1",
+											"left": 357,
+											"top": 743,
+											"width": 574,
+											"height": 13,
+											"text": "구매 시스템"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGAcmY95/oVAew=",
+											"_parent": {
+												"$ref": "AAAAAAGAcmY95/oStzE="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGAcmY95/oWLRo=",
+											"_parent": {
+												"$ref": "AAAAAAGAcmY95/oStzE="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 352,
+									"top": 736,
+									"width": 584,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAGAcmY95/oTixs="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAGAcmY95/oUSzY="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAGAcmY95/oVAew="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAGAcmY95/oWLRo="
+									}
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 352,
+							"top": 736,
+							"width": 584,
+							"height": 448,
+							"nameCompartment": {
+								"$ref": "AAAAAAGAcmY95/oStzE="
 							}
 						}
 					]
@@ -10917,6 +11012,14 @@
 						"$ref": "AAAAAAGAaXhWGXt8wNM="
 					},
 					"name": "포인트 적립 기능"
+				},
+				{
+					"_type": "UMLUseCaseSubject",
+					"_id": "AAAAAAGAcmY95voPfIQ=",
+					"_parent": {
+						"$ref": "AAAAAAGAaXhWGXt8wNM="
+					},
+					"name": "구매 시스템"
 				}
 			]
 		}
