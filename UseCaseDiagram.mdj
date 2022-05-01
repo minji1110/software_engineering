@@ -4640,7 +4640,7 @@
 											"top": 1317,
 											"width": 169.3173828125,
 											"height": 13,
-											"text": "택배사 물품 수거 신청 event"
+											"text": "택배사 물품 수거 신청"
 										},
 										{
 											"_type": "LabelView",
@@ -10798,9 +10798,9 @@
 												"$ref": "AAAAAAGAf6PiCeFdqu0="
 											},
 											"font": "Arial;13;1",
-											"left": 738.5,
+											"left": 739.5,
 											"top": 1834,
-											"width": 131,
+											"width": 134,
 											"height": 13,
 											"text": "판매 or 구매 통계 출력"
 										},
@@ -10814,7 +10814,7 @@
 											"font": "Arial;13;0",
 											"left": -208,
 											"top": -16,
-											"width": 73.67724609375,
+											"width": 77.9365234375,
 											"height": 13,
 											"text": "(from Model)"
 										},
@@ -10833,9 +10833,9 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 733.5,
+									"left": 734.5,
 									"top": 1827,
-									"width": 141.447265625,
+									"width": 144,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGAf6PiCeFe4HQ="
@@ -10935,7 +10935,7 @@
 							"containerChangeable": true,
 							"left": 704,
 							"top": 1800,
-							"width": 200,
+							"width": 205,
 							"height": 80,
 							"nameCompartment": {
 								"$ref": "AAAAAAGAf6PiCeFdqu0="
@@ -10999,7 +10999,7 @@
 											"font": "Arial;13;1",
 											"left": 1477,
 											"top": 1869,
-											"width": 81.61181640625,
+											"width": 82.5703125,
 											"height": 13,
 											"text": "이메일 시스템"
 										},
@@ -11013,7 +11013,7 @@
 											"font": "Arial;13;0",
 											"left": 720,
 											"top": -16,
-											"width": 73.67724609375,
+											"width": 77.9365234375,
 											"height": 13,
 											"text": "(from Model)"
 										},
@@ -11034,7 +11034,7 @@
 									"font": "Arial;13;0",
 									"left": 1472,
 									"top": 1862,
-									"width": 91.61181640625,
+									"width": 92.5703125,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGAf6Q/bOzowKc="
@@ -11118,7 +11118,7 @@
 							"containerChangeable": true,
 							"left": 1472,
 							"top": 1808,
-							"width": 91.61181640625,
+							"width": 92.5703125,
 							"height": 80,
 							"nameCompartment": {
 								"$ref": "AAAAAAGAf6Q/bOznUF0="
@@ -11159,7 +11159,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1187,
+									"left": 1190,
 									"top": 1822,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -11180,7 +11180,7 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 1187,
+									"left": 1190,
 									"top": 1807,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -11201,7 +11201,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1186,
+									"left": 1189,
 									"top": 1851,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -11222,7 +11222,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 930,
+									"left": 935,
 									"top": 1819,
 									"height": 13,
 									"alpha": 0.5235987755982988,
@@ -11243,7 +11243,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 932,
+									"left": 937,
 									"top": 1806,
 									"height": 13,
 									"alpha": 0.7853981633974483,
@@ -11264,7 +11264,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 925,
+									"left": 930,
 									"top": 1846,
 									"height": 13,
 									"alpha": -0.5235987755982988,
@@ -11371,7 +11371,7 @@
 								"$ref": "AAAAAAGAf6PiCeFcj2Q="
 							},
 							"lineStyle": 1,
-							"points": "904:1840;1471:1846",
+							"points": "909:1840;1471:1846",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGAf6RynApu5UE="
@@ -11429,7 +11429,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 681,
+									"left": 682,
 									"top": 1829,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -11450,7 +11450,7 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 680,
+									"left": 681,
 									"top": 1814,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -11471,7 +11471,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 684,
+									"left": 683,
 									"top": 1858,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -11493,7 +11493,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 687,
-									"top": 1828,
+									"top": 1829,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
@@ -11513,7 +11513,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 688,
+									"left": 689,
 									"top": 1815,
 									"height": 13,
 									"alpha": 0.7853981633974483,
@@ -11596,7 +11596,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 682,
-									"top": 1856,
+									"top": 1857,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
@@ -11641,7 +11641,7 @@
 								"$ref": "AAAAAAGAcKDEZ/036Yw="
 							},
 							"lineStyle": 1,
-							"points": "663:1852;703:1848",
+							"points": "663:1852;703:1849",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGAf73ZZXyDBA4="
@@ -12373,7 +12373,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGAaXhWGXt8wNM="
 					},
-					"name": "택배사 물품 수거 신청 event"
+					"name": "택배사 물품 수거 신청"
 				},
 				{
 					"_type": "UMLUseCase",
