@@ -1,3 +1,22 @@
+[foredayner] Sun May 1 22:41:39 2022 +0900 택배사 물품 수거신청에서 event 문구 삭제 c3a66c7
+[foredayner] Sun May 1 22:39:45 2022 +0900 이메일 시스템을 외부actor로 변경, 이메일 공지evnet 수정 fa566ba
+[foredayner] Sun May 1 21:14:59 2022 +0900 usecase diagram 결재시스템 외부actor로 변경 06203e7
+[foredayner] Sun May 1 20:19:18 2022 +0900 Update 소웨공_보고서.docx 570b7a8
+[foredayner] Sun May 1 20:07:19 2022 +0900 Merge branch 'main' of https://github.com/minji1110/software_engineering 55a3ea9
+[foredayner] Sun May 1 20:05:27 2022 +0900 esg.docx 사용하지 않는 파일 제거 81d46f4
+[foredayner] Sun May 1 20:04:22 2022 +0900 일부 수정 9d2700c
+[foredayner] Sun May 1 19:51:00 2022 +0900 Delete ui_design directory 083a3af
+[minji1110] Sun May 1 01:09:47 2022 +0900 ui design files 4bcb2f6
+[minji1110] Sat Apr 30 17:26:02 2022 +0900 역할분담 작성 816bdb3
+[minji1110] Sat Apr 30 17:16:00 2022 +0900 use case description 1~8 7a825b2
+[minji1110] Sat Apr 30 16:28:31 2022 +0900 diagram 수정본 1e5162b
+[minji1110] Sat Apr 30 16:27:22 2022 +0900 diagram 추가 a2e6ff7
+[minji1110] Sat Apr 30 15:42:31 2022 +0900 actor descriptions 추가 5ce87e2
+[junki] Sat Apr 30 15:28:25 2022 +0900 Requirement list 수정 df6564c
+[minji1110] Sat Apr 30 15:23:41 2022 +0900 requirement list 189e578
+[minji1110] Sat Apr 30 14:47:53 2022 +0900 화살표방향 반대로 cc7b16d
+[minji1110] Sat Apr 30 14:36:51 2022 +0900 상품수정 extend로 6c20aeb
+[minji1110] Sat Apr 30 14:31:58 2022 +0900 보고서 파일 2ceeb56
 [MinJi Kim] Sat Apr 30 14:05:21 2022 +0900 Merge pull request #1 from minji1110/철권 4303cf4
 [foredayner] Sat Apr 30 11:23:43 2022 +0900 Create esg.docx a0f1758
 [foredayner] Sat Apr 30 10:19:10 2022 +0900 결재 use case 제거 및 포인트사용 extend 변경 dcda6a4
