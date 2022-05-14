@@ -5367,7 +5367,7 @@
 											"top": 886.5,
 											"width": 115,
 											"height": 13,
-											"text": "상품정보 조회"
+											"text": "상품정보 검색"
 										},
 										{
 											"_type": "LabelView",
@@ -7198,7 +7198,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGAaXhWGXt8wNM="
 					},
-					"name": "상품정보 조회"
+					"name": "상품정보 검색"
 				},
 				{
 					"_type": "UMLUseCase",
