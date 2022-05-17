@@ -42843,13 +42843,13 @@
 														"$ref": "AAAAAAGAyEbf5yJcdDs="
 													},
 													"font": "Arial;13;0",
-													"left": 417.692138671875,
+													"left": 405.688720703125,
 													"top": 212,
-													"width": 104.61572265625,
+													"width": 128.62255859375,
 													"height": 13,
 													"alpha": -1.9295664491201507,
 													"distance": 17.08800749063506,
-													"text": "1 : startInterface()"
+													"text": "1 : showSignUpInput()"
 												},
 												{
 													"_type": "NodeLabelView",
@@ -44513,7 +44513,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGAyEIZHQ/XdkI="
 									},
-									"name": "startInterface()",
+									"name": "showSignUpInput()",
 									"source": {
 										"$ref": "AAAAAAGAyEUrAxfVRNI="
 									},
@@ -46817,13 +46817,13 @@
 														"$ref": "AAAAAAGA0lcE353GmTE="
 													},
 													"font": "Arial;13;0",
-													"left": 422.70458984375,
+													"left": 403.185546875,
 													"top": 211,
-													"width": 102.5908203125,
+													"width": 141.62890625,
 													"height": 13,
 													"alpha": -1.1583853606074657,
 													"distance": 17.46424919657298,
-													"text": "2 : startInterface()"
+													"text": "2 : showSignOutButton()"
 												},
 												{
 													"_type": "NodeLabelView",
@@ -47867,7 +47867,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGA0k6wbIkk1J0="
 									},
-									"name": "startInterface()",
+									"name": "showSignOutButton()",
 									"source": {
 										"$ref": "AAAAAAGA0lSPiIpsOsw="
 									},
@@ -49731,13 +49731,13 @@
 														"$ref": "AAAAAAGA0mIyTxEtw2U="
 													},
 													"font": "Arial;13;0",
-													"left": 377.70458984375,
+													"left": 370.103271484375,
 													"top": 200,
-													"width": 102.5908203125,
+													"width": 117.79345703125,
 													"height": 13,
 													"alpha": -1.9832062438019995,
 													"distance": 17.46424919657298,
-													"text": "1 : startInterface()"
+													"text": "1 : showLoginInput()"
 												},
 												{
 													"_type": "NodeLabelView",
@@ -51082,7 +51082,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGA0l6wyQrNKVw="
 									},
-									"name": "startInterface()",
+									"name": "showLoginInput()",
 									"source": {
 										"$ref": "AAAAAAGA0mFCugz1w/A="
 									},
@@ -53269,13 +53269,13 @@
 														"$ref": "AAAAAAGA0mlt0UPluiA="
 													},
 													"font": "Arial;13;0",
-													"left": 381.20458984375,
-													"top": 211,
-													"width": 102.5908203125,
+													"left": 365.291015625,
+													"top": 208,
+													"width": 134.41796875,
 													"height": 13,
-													"alpha": -1.6539367310970738,
-													"distance": 12.041594578792296,
-													"text": "2 : startInterface()"
+													"alpha": -1.6814524504076827,
+													"distance": 9.055385138137417,
+													"text": "2 : showLogoutButton()"
 												},
 												{
 													"_type": "NodeLabelView",
@@ -54319,7 +54319,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGA0mYxWzOmvzM="
 									},
-									"name": "startInterface()",
+									"name": "showLogoutButton()",
 									"source": {
 										"$ref": "AAAAAAGA0me4rzUqza8="
 									},
