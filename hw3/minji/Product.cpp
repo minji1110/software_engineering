@@ -1,4 +1,4 @@
-#include <Product.h>
+#include "Product.h"
 
 void Product::createProduct(string productName, string companyName, int price, int quantity){
     this->productName=productName;

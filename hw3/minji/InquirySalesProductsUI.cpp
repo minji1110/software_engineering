@@ -1,7 +1,7 @@
 #include <vector>
 #include <stdio.h>
-#include <Product.h>
-#include <InquirySalesProductsUI.h>
+#include "Product.h"
+#include "InquirySalesProductsUI.h"
 
 void InquirySalesProductsUI::showSalesProducts(FILE* out_fp, vector<Product> products){
     

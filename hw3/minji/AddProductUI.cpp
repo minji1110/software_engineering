@@ -11,7 +11,7 @@ void AddProductUI::createNewProduct(FILE* in_fp,FILE* out_fp,User* user){
     int price;
     int quantity;
 
-    fscanf(in_fp, "%s %s %s %s", productName, companyName, &price, &quantity);
+    fscanf_s(in_fp, "%s %s %s %s", productName, companyName, &price, &quantity);
     AddProduct *addProduct = new AddProduct();
     addProduct->addNewSalesProduct(user,productName, companyName, price, quantity);
     

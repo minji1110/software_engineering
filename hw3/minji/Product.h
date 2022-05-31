@@ -5,21 +5,21 @@ using namespace std;
 
 class Product
 {
-    private:
-        string productName;     //ìƒí’ˆëª…
-        string companyName;     //ì œì‘íšŒì‚¬ëª…
-        int price;              //ê°€ê²©
-        int salesQuantity;      //íŒë§¤ìˆ˜ëŸ‰
-        int remainingQuantity;  //ì¬ê³ ìˆ˜ëŸ‰
-        int satisfiction;       //êµ¬ë§¤ë§Œì¡±ë„    
-        
-    public:
-        string getProductName();
-        string getCompanyName();
-        int getPrice();
-        int getSalesQuantity();
-        int getRemainingQuantity();
-        int getSatisfiction();
-        
-        void createProduct(string, string, int, int);
+private:
+    string productName;     //»óÇ°¸í
+    string companyName;     //Á¦ÀÛÈ¸»ç¸í
+    int price;              //°¡°İ
+    int salesQuantity;      //ÆÇ¸Å¼ö·®
+    int remainingQuantity;  //Àç°í¼ö·®
+    int satisfiction;       //±¸¸Å¸¸Á·µµ    
+
+public:
+    string getProductName();
+    string getCompanyName();
+    int getPrice();
+    int getSalesQuantity();
+    int getRemainingQuantity();
+    int getSatisfiction();
+
+    void createProduct(string, string, int, int);
 };
