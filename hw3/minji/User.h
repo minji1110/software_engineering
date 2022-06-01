@@ -1,6 +1,5 @@
 #pragma once 
 #include <iostream>
-// #include "Product.h"
 #include "ProductCollection.h"
 
 using namespace std;
@@ -26,7 +25,7 @@ class User
             this->id=id;
             this->password=password;
 
-            // ProductCollection *productCollection=new ProductCollection();
-            // this->salesProductCollection=*productCollection;
+            ProductCollection *productCollection=new ProductCollection();
+            this->salesProductCollection=*productCollection;
         }
 };

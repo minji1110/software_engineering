@@ -16,9 +16,9 @@ void program_exit();
 void doTask();
 
 // 변수 선언
-FILE* in_fp, *out_fp;
+FILE* in_fp;
+FILE* out_fp;
 vector<User> users;
-User* nowUser=  new User("lee", "123456", "idid", "pwpw");
 int nowUserIndex;
 
 int main()
@@ -33,6 +33,7 @@ int main()
 
 void doTask()
 {
+    User* nowUser=  new User("lee", "123456", "idid", "pwpw");
     // 메뉴 파싱을 위한 level 구분을 위한 변수
     int menu_level_1=0, menu_level_2=0;
     int is_program_exit=0;
@@ -41,7 +42,7 @@ void doTask()
 
         // 입력파일에서 메뉴 숫자 2개를 읽기
         fscanf(in_fp, "%d %d", &menu_level_1,&menu_level_2);
-        
+
         // 메뉴 구분 및 해당 연산 수행
         switch(menu_level_1){
             case 1:
@@ -64,7 +65,7 @@ void doTask()
                     // 3.1 판매 의류 등록
                     case 1:{
                         AddProductUI* addProductUI = new AddProductUI();
-                        addProductUI->createNewProduct(in_fp,out_fp,nowUser);
+                        addProductUI -> createNewProduct(in_fp,out_fp,nowUser);
                         break;
                     }
                 // 3.2 등록 상품 조회 
@@ -74,10 +75,10 @@ void doTask()
                     }
                 // 3.3 판매 완료 상품 조회
                     case 3:{
-
+                        break;
                     }
-
                 }
+                break;
             }
             case 4:
             {
@@ -85,11 +86,13 @@ void doTask()
                 // 4.2 상품 구매
                 // 4.3 상품 구매 내역 조회
                 // 4.4 상품 구매 만족도 평가
-
+                break;
             }
+            
             case 5:
             {
                 // 5.1 판매 상품통계
+                break;
             }
             case 6:
             {

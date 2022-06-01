@@ -6,12 +6,12 @@ using namespace std;
 class Product
 {
 private:
-    string productName;     //상품명
-    string companyName;     //제작회사명
-    int price;              //가격
-    int salesQuantity;      //판매수량
-    int remainingQuantity;  //재고수량
-    int satisfiction;       //구매만족도    
+    string productName;    
+    string companyName;     
+    int price;              
+    int salesQuantity;      
+    int remainingQuantity;  
+    int satisfiction;       
 
 public:
     string getProductName();

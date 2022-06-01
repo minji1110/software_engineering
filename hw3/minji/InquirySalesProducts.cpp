@@ -5,6 +5,7 @@
 
 
 InquirySalesProducts::InquirySalesProducts(FILE* out_fp, User* user){
+        
         vector<Product> salesProducts = user->getSalesProducts();
 
         InquirySalesProductsUI *inquirySalesProductsUI= new InquirySalesProductsUI();
