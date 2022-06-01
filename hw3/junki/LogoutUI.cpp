@@ -11,5 +11,5 @@ void LogoutUI::logout(FILE* out_fp, User* nowUser){
     logout->logout(nowUser);
     
     fprintf(out_fp,"2.2 로그아웃\n");
-    fprintf(out_fp,"%s\n", nowUser->id);
+    fprintf(out_fp,"%s\n", nowUser->getId());
 }

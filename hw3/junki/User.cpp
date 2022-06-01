@@ -15,8 +15,8 @@ void User::addNewUser(string name, string personalNumber, string id, string pass
 }
 
 /*
-    함수 이름 : User::addNewUser
-    기능 : 새로운 유저를 생성한다.
+    함수 이름 : User::deleteUser
+    기능 : 현재 회원이 탈퇴한다.
     전달 인자 : X
     반환 인자 : 아이디
 */
@@ -35,7 +35,7 @@ void User::getUser(string id, string password, vector<User> &user, User* nowUser
 {
         // 로그인 기능 수행
     for(int i=0; i<user.size();i++){
-        if(user[i].getId == id && user[i].getPassword == password){
+        if(user[i].getId() == id && user[i].getPassword() == password){
             nowUser = &user[i];
             nowUserIndex = i;
             break;
