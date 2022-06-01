@@ -4,6 +4,10 @@
 3 1 pants minji 3000 0
 3 2
 3 3
-1 2
+2 2
+1 1 park 098765 obs pwd2
+2 1 obs pwd2
+3 2
+3 3
 2 2
 6 1

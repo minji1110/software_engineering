@@ -135,9 +135,10 @@ void doTask(){
                 break;
             }
         }
+        fprintf(out_fp,"\n");
     }
 }
-                                                                
+
                                          
 void program_exit(){
     fprintf(out_fp,"6.1. 종료");
