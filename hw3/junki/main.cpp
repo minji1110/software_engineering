@@ -68,6 +68,7 @@ void doTask(){
                         break;
                     }
                 }
+                break;
             }
             case 2:
             {
@@ -87,6 +88,7 @@ void doTask(){
                         break;
                     }
                 }
+                break;
             }
             case 3:
             {

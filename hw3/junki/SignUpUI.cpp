@@ -12,11 +12,11 @@ void SignUpUI::signUp(FILE* in_fp,FILE* out_fp, vector<User> &user){
     string id;
     string password;
                                         
-    fscanf(in_fp, "%s %s %s %s", name, personalNumber, id, password);
+    fscanf(in_fp, "%s %s %s %s", name.c_str(), personalNumber.c_str(), id.c_str(), password.c_str());
 
     SignUp *signUp = new SignUp();
     signUp->signUp(name, personalNumber, id, password, user);
     
-    fprintf(out_fp,"1.1 회원가입\n");
-    fprintf(out_fp,"%s %s %d %d\n", name, personalNumber, id, password);
+    fprintf(out_fp,"1.1. 회원가입\n");
+    fprintf(out_fp,"%s %s %s %s\n", name.c_str(), personalNumber.c_str(), id.c_str(), password.c_str());
 }

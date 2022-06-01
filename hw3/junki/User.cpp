@@ -10,8 +10,8 @@
 */
 void User::addNewUser(string name, string personalNumber, string id, string password, vector<User> &user)
 {
-    User newUser = new User(name, personalNumber, id, password);
-    user.push_back(newUser);
+    User* newUser = new User(name, personalNumber, id, password);
+    user.push_back(*newUser);
 }
 
 /*
@@ -33,10 +33,10 @@ void User::deleteUser(vector<User> &user, int &nowUserIndex)
 */
 void User::getUser(string id, string password, vector<User> &user, User* nowUser, int &nowUserIndex)
 {
-        // 로그인 기능 수행
+    // 로그인 기능 수행
     for(int i=0; i<user.size();i++){
         if(user[i].getId() == id && user[i].getPassword() == password){
-            nowUser = &user[i];
+            *nowUser = user[i];
             nowUserIndex = i;
             break;
         }
