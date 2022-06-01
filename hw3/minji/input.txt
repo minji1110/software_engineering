@@ -1,4 +1,5 @@
 3 1 hat2 chulsoo 2000 1
-3 1 pants minji 3000 4
+3 1 pants minji 3000 0
 3 2
+3 3
 6 1

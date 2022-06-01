@@ -5,6 +5,7 @@
 #include "User.h"
 #include "AddProductUI.h"
 #include "InquirySalesProducts.h"
+#include "InquirySoldProducts.h"
 
 // 상수 선언
 #define MAX_STRING 32
@@ -75,6 +76,7 @@ void doTask()
                     }
                 // 3.3 판매 완료 상품 조회
                     case 3:{
+                        InquirySoldProducts* inquirySoldProducts = new InquirySoldProducts(out_fp, nowUser);
                         break;
                     }
                 }

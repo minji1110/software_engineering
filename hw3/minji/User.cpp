@@ -23,3 +23,13 @@ void User::addNewSalesProduct(string productName, string companyName, int price,
 vector<Product> User::getSalesProducts(){
     return this->salesProductCollection.getSalesProducts();
 }
+
+/*
+    함수 이름 : User::getSoldProducts
+    기능 : 판매 완료 상품을 조회한다.
+    전달 인자 : 없음
+    반환 인자 : 판매 완료 상품 리스트
+*/
+vector<Product> User::getSoldProducts(){
+    return this->salesProductCollection.getSoldProducts();
+}

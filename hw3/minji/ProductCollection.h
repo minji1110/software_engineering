@@ -8,6 +8,7 @@ class ProductCollection{
     
     public:
         vector<Product> getSalesProducts();
+        vector<Product> getSoldProducts();
         void addNewSalesProduct(Product);
         
 };
