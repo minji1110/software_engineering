@@ -24,7 +24,6 @@ public:
         this->id = id;
         this->password = password;
     }
-    // 기본 멤버 함수들도 diagram에 추가해야할까요?
     string getId(){
         return this->id;
     }
@@ -37,4 +36,5 @@ public:
     Product* addNewSalesProduct(string,string,int,int); // 판매 상품 등록
     vector<Product> getSalesProducts();   // 판매 상품 조회
     vector<Product> getSoldProducts();    // 판매 완료 의류 조회
+    vector<Product> getSalesEstimations(); // 상품 판매 통계
 };

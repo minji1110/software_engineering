@@ -8,6 +8,8 @@ void Product::createProduct(string productName, string companyName, int price, i
     this->remainingQuantity=quantity;
     this->salesQuantity=0;
     this->salesQuantity=0;
+    this->totalSalesPrice=0;
+    this->totalSatisfiction=0;
 }
 
 string Product::getProductName()
@@ -38,4 +40,29 @@ int Product::getRemainingQuantity()
 int Product::getSatisfiction()
 {
     return this->satisfiction;
+}
+
+int Product::getTotalSalesPrice()
+{
+    return this->totalSalesPrice;
+}
+
+int Product::getTotalSatisfiction()
+{
+    return this->totalSatisfiction;
+}
+
+void Product::setTotalSalesPrice(int salesPrice)
+{
+    this->totalSalesPrice += salesPrice;
+}
+
+void Product::setTotalSatisfiction(int satisfiction)
+{
+    this->totalSatisfiction += satisfiction;
+}
+
+void Product::setAverageSatisfiction(int averageSatisfiction)
+{
+    this->averageSatisfiction = averageSatisfiction;
 }
