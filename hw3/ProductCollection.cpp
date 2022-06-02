@@ -32,7 +32,7 @@ vector<Product> ProductCollection::estimateProduct()
     vector<Product> allProducts=this->salesProducts;
     vector<Product>::iterator product;
     for (product = allProducts.begin(); product != allProducts.end(); ++product){   
-        int averageSatisfiction = int(product->getTotalSatisfiction() / (product->getSalesQuantity() - product->getRemainingQuantity()));
+        int averageSatisfiction = int(product->getTotalSatisfiction() / (product->getSalesQuantity()));
         product->setAverageSatisfiction(averageSatisfiction);
     }
     return allProducts;
