@@ -11,10 +11,10 @@
 string AddSatisfaction::addSatisfaction(string name, int satisfiction, vector<User> *user)
 {
 
-	vector<User>::iterator us;
+	vector<User>::iterator iteratorUser;
 	vector<Product>::iterator iteratorPro;
-	for (us = user->begin(); us != user->end(); us++) {
-		vector<Product> pro = us->getSalesProducts();
+	for (iteratorUser = user->begin(); iteratorUser != user->end(); iteratorUser++) {
+		vector<Product> pro = iteratorUser->getSalesProducts();
 	
 		for (iteratorPro = pro.begin(); iteratorPro != pro.end(); iteratorPro++) {
 			if (iteratorPro->getProductName() == name)
@@ -22,12 +22,13 @@ string AddSatisfaction::addSatisfaction(string name, int satisfiction, vector<Us
 				iteratorPro->setTotalSatisfiction(satisfiction);
 			
 			return iteratorPro->getSellerID();
+			break;
 		}
 			
 		}
 
 	}
-	return "0";
+	return "mbc"; // юс╫ц
 
 	
 }

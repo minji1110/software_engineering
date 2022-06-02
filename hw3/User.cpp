@@ -54,7 +54,7 @@ void User::getUser(string id, string password, vector<User> &user, User* nowUser
 void User::addNewSalesProduct(string productName, string companyName, int price, int quantity)
 {
     Product* newProduct=new Product();
-    newProduct->createProduct(productName, companyName, price, quantity);
+    newProduct->createProduct(productName, companyName, id, price, quantity);
     this->salesProductCollection.addNewSalesProduct(*newProduct);
 }
 

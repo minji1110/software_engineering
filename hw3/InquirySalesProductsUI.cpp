@@ -16,6 +16,6 @@ void InquirySalesProductsUI::showSalesProducts(FILE* out_fp, vector<Product> pro
 
     fprintf(out_fp,"3.2. 등록 상품 조회\n");
     for (product = products.begin(); product != products.end(); ++product){   
-        fprintf(out_fp,"> %s %s %d %d\n", product->getProductName().c_str(),product->getCompanyName().c_str(),product->getPrice(), product->getRemainingQuantity());
+        fprintf(out_fp, "> %s %s %s %d %d %d\n", product->getSellerID(), product->getProductName().c_str(), product->getCompanyName().c_str(), product->getPrice(), product->getRemainingQuantity(), product->getAverageSatisfiction());
     }
 }

@@ -17,7 +17,7 @@ void SearchProductsUI::putProductName(FILE* in_fp, FILE* out_fp, vector<User> &u
     string sellerID, productName, companyName;
     int price, quantity, satisfiction=0;
 
-    fscanf(in_fp, "%s ", productName);
+    fscanf(in_fp, "%s ", productName.c_str());
 
     SearchProducts *searchProducts = new SearchProducts(); 
      Product product =searchProducts->getProductDetail(productName, &user);
@@ -28,6 +28,6 @@ void SearchProductsUI::putProductName(FILE* in_fp, FILE* out_fp, vector<User> &u
        satisfiction = product.getSatisfiction();
     
         fprintf(out_fp, "4.1 상품 검색\n");
-        fprintf(out_fp, "> %s %s %s %d %d %d\n", sellerID, productName, companyName, price, quantity, satisfiction);
+        fprintf(out_fp, "> %s %s %s %d %d %d\n", sellerID.c_str(), productName.c_str(), companyName.c_str(), price, quantity, satisfiction);
    
 };

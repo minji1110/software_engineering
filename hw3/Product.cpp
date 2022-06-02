@@ -6,7 +6,7 @@
     전달 인자 : 상품명, 제작회사명, 가격, 수량
     반환 인자 : 없음
 */
-void Product::createProduct(string productName, string companyName, int price, int quantity)
+void Product::createProduct(string productName, string companyName, string sellerID, int price, int quantity)
 {
     this->productName=productName;
     this->companyName=companyName;
@@ -17,6 +17,7 @@ void Product::createProduct(string productName, string companyName, int price, i
     this->totalSalesPrice=0;
     this->totalSatisfiction=0;
     this->averageSatisfiction=0;
+    this->sellerID = sellerID;
 }
 
 string Product::getProductName()

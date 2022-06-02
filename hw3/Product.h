@@ -32,5 +32,5 @@ public:
     void setTotalSalesPrice(int salesPrice);
     void setTotalSatisfiction(int satisfiction);
     void setAverageSatisfiction(int averageSatisfiction);
-    void createProduct(string, string, int, int);
+    void createProduct(string, string, string, int, int);
 }; 

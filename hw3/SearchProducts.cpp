@@ -19,17 +19,17 @@ Product  SearchProducts::getProductDetail(string name, vector<User> *user) {
 
     string productname = name;
  
-    vector<Product>::iterator pro;
-    vector<User>::iterator use;
+    vector<Product>::iterator iteratorProduct;
+    vector<User>::iterator iteratorUser;
     Product k;
 
-    for(use = user->begin(); use!= user->end(); use++){
-        vector<Product> product = use->getSalesProducts();
-        for (pro = product.begin(); pro != product.end(); pro++)
+    for(iteratorUser = user->begin(); iteratorUser != user->end(); iteratorUser++){
+        vector<Product> product = iteratorUser->getSalesProducts();
+        for (iteratorProduct = product.begin(); iteratorProduct != product.end(); iteratorProduct++)
         {
-            if (pro->getProductName() == productname)
-                k = *pro;
-                return *pro;
+            if (iteratorProduct->getProductName() == productname)
+                k = *iteratorProduct;
+                return *iteratorProduct;
                 break;
             
         }
