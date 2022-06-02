@@ -26,3 +26,14 @@ vector<Product> ProductCollection::getSoldProducts()
     sort(soldProducts.begin(),soldProducts.end(), Product::compareProductName);
     return soldProducts;
 }
+
+vector<Product> ProductCollection::estimateProduct() 
+{
+    vector<Product> allProducts=this->salesProducts;
+    vector<Product>::iterator product;
+    for (product = allProducts.begin(); product != allProducts.end(); ++product){   
+        int averageSatisfiction = int(product->getTotalSatisfiction() / (product->getSalesQuantity() - product->getRemainingQuantity()));
+        product->setAverageSatisfiction(averageSatisfiction);
+    }
+    return allProducts;
+} 

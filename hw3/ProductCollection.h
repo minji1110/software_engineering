@@ -11,5 +11,6 @@ class ProductCollection
         vector<Product> getSalesProducts();
         vector<Product> getSoldProducts();
         void addNewSalesProduct(Product);
+        vector<Product> estimateProduct();
         
 };

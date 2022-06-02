@@ -83,7 +83,7 @@ void doTask(){
                     }
                 }
                 break;
-            }q
+            }
             case 3:{
                 switch(menu_level_2){
                     case 1:{  // 3.1 판매 의류 등록

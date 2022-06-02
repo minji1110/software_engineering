@@ -10,6 +10,7 @@ void Product::createProduct(string productName, string companyName, int price, i
     this->salesQuantity=0;
     this->totalSalesPrice=0;
     this->totalSatisfiction=0;
+    this->averageSatisfiction=0;
 }
 
 string Product::getProductName()

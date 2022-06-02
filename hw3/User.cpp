@@ -79,3 +79,14 @@ vector<Product> User::getSoldProducts()
 {
     return this->salesProductCollection.getSoldProducts();
 }
+
+/*
+    함수 이름 : User::getSalesEstimations
+    기능 : 상품 판매 통계를 조회한다.
+    전달 인자 : 없음
+    반환 인자 : 상품명, 총 판매액, 평균 구매만족도 리스트
+*/
+vector<Product> User::getSalesEstimations()
+{
+    return this->salesProductCollection.estimateProduct();
+} 
