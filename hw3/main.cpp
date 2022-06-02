@@ -28,9 +28,9 @@ void doTask();
 
 // 변수 선언
 FILE* in_fp, *out_fp;
-vector <User> user;
-User* nowUser = new User();
-int nowUserIndex;
+vector <User> user; //전체 회원 리스트
+User* nowUser = new User(); //현재 로그인한 회원
+int nowUserIndex;   //현재 로그인한 회원의 index
 
 int main()
 {

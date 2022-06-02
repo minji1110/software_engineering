@@ -13,7 +13,7 @@ void AddSatisfactionUI::addSatisfaction(FILE* in_fp, FILE* out_fp, vector<User>*
 	AddSatisfaction* addsatisfaction = new AddSatisfaction();
 
 	Product product = addsatisfaction->addSatisfaction(productname, satisfaction, user);
-	fprintf(out_fp, "4.4 ±¸¸Å¸¸Á·µµ Æò°¡\n");
+	fprintf(out_fp, "4.4 ï¿½ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½\n");
 	fprintf(out_fp, "> %s %s %d %d\n", sellerID.c_str(), productname.c_str(), satisfaction);
 
 

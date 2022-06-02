@@ -18,9 +18,6 @@ private:
     int averageSatisfiction;
 
 public:
-    static bool compareProductName(const Product& p1, const Product& p2) {  
-        return (p1.productName < p2.productName);  
-    }  
     string getProductName();
     string getCompanyName();
     int getPrice();
@@ -33,5 +30,4 @@ public:
     void setTotalSatisfiction(int satisfiction);
     void setAverageSatisfiction(int averageSatisfiction);
     void createProduct(string, string, int, int);
-
 }; 

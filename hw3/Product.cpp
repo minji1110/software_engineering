@@ -1,5 +1,11 @@
 #include "Product.h"
 
+/*
+    함수 이름 : Product::createProduct
+    기능 : 새로운 상품을 생성한다.
+    전달 인자 : 상품명, 제작회사명, 가격, 수량
+    반환 인자 : 없음
+*/
 void Product::createProduct(string productName, string companyName, int price, int quantity)
 {
     this->productName=productName;

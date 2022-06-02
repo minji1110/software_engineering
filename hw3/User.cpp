@@ -7,7 +7,7 @@
     함수 이름 : User::addNewUser
     기능 : 새로운 유저를 생성한다.
     전달 인자 : 이름, 주민번호, 아이디, 비밀번호
-    반환 인자 : 이름, 주민번호, 아이디, 비밀번호
+    반환 인자 : 없음
 */
 void User::addNewUser(string name, string personalNumber, string id, string password, vector<User> &user)
 {
@@ -18,8 +18,8 @@ void User::addNewUser(string name, string personalNumber, string id, string pass
 /*
     함수 이름 : User::deleteUser
     기능 : 현재 회원이 탈퇴한다.
-    전달 인자 : X
-    반환 인자 : 아이디
+    전달 인자 : 전체회원, 현재 로그인한 회원 index
+    반환 인자 : 없음
 */
 void User::deleteUser(vector<User> &user, int &nowUserIndex)
 {
@@ -30,7 +30,7 @@ void User::deleteUser(vector<User> &user, int &nowUserIndex)
     함수 이름 : User::getUser
     기능 : 유저가 로그인을 수행한다.
     전달 인자 : 아이디, 비밀번호
-    반환 인자 : 아이디, 비밀번호
+    반환 인자 : 없음
 */
 void User::getUser(string id, string password, vector<User> &user, User* nowUser, int &nowUserIndex)
 {
