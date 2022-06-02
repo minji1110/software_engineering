@@ -28,6 +28,7 @@ void doTask();
 // 변수 선언
 FILE* in_fp, *out_fp;
 vector <User> user;
+vector <Product> allProducts;   //현재 등록된 모든 상품
 User* nowUser = new User();
 int nowUserIndex;
 
@@ -87,7 +88,8 @@ void doTask(){
                 switch(menu_level_2){
                     case 1:{  // 3.1 판매 의류 등록
                         AddProductUI* addProductUI = new AddProductUI();
-                        addProductUI -> createNewProduct(in_fp,out_fp,nowUser);
+                        Product* newProduct=addProductUI -> createNewProduct(in_fp,out_fp,nowUser);
+                        allProducts.push_back(*newProduct);
                         break;
                     }
                     case 2:{  // 3.2 등록 상품 조회 
