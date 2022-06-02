@@ -13,6 +13,7 @@
 #include "AddProductUI.h"
 #include "InquirySalesProducts.h"
 #include "InquirySoldProducts.h"
+#include "EstimateProducts.h"
 
 // 상수 선언
 #define MAX_STRING 32
@@ -111,7 +112,14 @@ void doTask(){
 
             }
             case 5:{
-                // 5.1 판매 상품통계
+                switch(menu_level_2){
+                    case 1:{  // 5.1 판매 상품통계
+                        EstimateProducts* estimateProducts=new EstimateProducts();
+                        estimateProducts->estimateProducts(out_fp, nowUser);
+                        break;
+                    }
+                }
+                break;
             }
             case 6:{
                 // 6.1 종료 
