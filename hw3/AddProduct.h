@@ -4,5 +4,5 @@
 class AddProduct
 {
     public:
-        Product* addNewSalesProduct(User*, string,string,int,int);
+        void addNewSalesProduct(User*, string,string,int,int);
 };

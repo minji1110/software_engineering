@@ -66,3 +66,4 @@ void Product::setAverageSatisfiction(int averageSatisfiction)
 {
     this->averageSatisfiction = averageSatisfiction;
 }
+

@@ -1,5 +1,5 @@
 #pragma once 
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -12,6 +12,7 @@ private:
     int salesQuantity;      
     int remainingQuantity;  
     int satisfiction;
+    int satisfactionNumber;
     int totalSalesPrice;
     int totalSatisfiction;
     int averageSatisfiction;
@@ -31,6 +32,6 @@ public:
     void setTotalSalesPrice(int salesPrice);
     void setTotalSatisfiction(int satisfiction);
     void setAverageSatisfiction(int averageSatisfiction);
-
     void createProduct(string, string, int, int);
-};
+
+}; 
