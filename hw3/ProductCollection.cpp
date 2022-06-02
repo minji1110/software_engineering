@@ -11,7 +11,6 @@ vector<Product> ProductCollection::getSalesProducts()
     return this->salesProducts;
 }
 
-
 vector<Product> ProductCollection::getSoldProducts() 
 {
     vector<Product> allProducts=this->salesProducts;
