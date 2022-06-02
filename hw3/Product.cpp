@@ -59,6 +59,11 @@ int Product::getTotalSatisfiction()
     return this->totalSatisfiction;
 }
 
+int Product::getAverageSatisfiction()
+{
+    return this->averageSatisfiction;
+}
+
 void Product::setTotalSalesPrice(int salesPrice)
 {
     this->totalSalesPrice += salesPrice;

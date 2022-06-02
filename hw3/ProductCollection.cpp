@@ -77,10 +77,19 @@ vector<Product> ProductCollection::getSoldProducts()
     return soldProducts;
 }
 
+
+/*
+    함수 이름 : ProductCollection::estimateProduct
+    기능 : 판매 상품의 평균 구매 만족도를 계산, 설정 후 반환한다.
+    전달 인자 : 없음
+    반환 인자 : 판매한 모든 상품 목록
+*/
 vector<Product> ProductCollection::estimateProduct() 
 {
-    vector<Product> allProducts=this->salesProducts;
+    vector<Product> allProducts=this->salesProducts;    //전체 상품 목록
     vector<Product>::iterator product;
+    
+    //전체 상품에 대해 평균 구매만족도를 계산, 설정한다.
     for (product = allProducts.begin(); product != allProducts.end(); ++product){   
         int averageSatisfiction = int(product->getTotalSatisfiction() / (product->getSalesQuantity()));
         product->setAverageSatisfiction(averageSatisfiction);
