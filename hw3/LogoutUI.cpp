@@ -6,7 +6,8 @@
 
 using namespace std;
 
-void LogoutUI::logout(FILE* out_fp, User* nowUser){
+void LogoutUI::logout(FILE* out_fp, User* nowUser)
+{
     Logout *logout = new Logout();
     logout->logout(nowUser);
     

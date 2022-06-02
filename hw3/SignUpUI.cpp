@@ -6,7 +6,8 @@
 
 using namespace std;
 
-void SignUpUI::signUp(FILE* in_fp,FILE* out_fp, vector<User> &user){
+void SignUpUI::signUp(FILE* in_fp,FILE* out_fp, vector<User> &user)
+{
     string name;
     string personalNumber;
     string id;

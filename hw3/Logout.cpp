@@ -5,6 +5,7 @@
 
 using namespace std;
 
-void Logout::logout(User* nowUser){
+void Logout::logout(User* nowUser)
+{
     nowUser = NULL;
 }

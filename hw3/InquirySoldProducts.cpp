@@ -2,7 +2,8 @@
 #include "InquirySoldProductsUI.h"
 #include "User.h"
 
-InquirySoldProducts::InquirySoldProducts(FILE* out_fp, User* user){
+InquirySoldProducts::InquirySoldProducts(FILE* out_fp, User* user)
+{
         
         vector<Product> soldProducts = user->getSoldProducts();
 

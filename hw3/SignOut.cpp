@@ -5,6 +5,7 @@
 
 using namespace std;
 
-void SignOut::signOut(vector<User> &user, User* nowUser, int &nowUserIndex){
+void SignOut::signOut(vector<User> &user, User* nowUser, int &nowUserIndex)
+{
     nowUser->deleteUser(user, nowUserIndex);
 }

@@ -5,7 +5,8 @@
 
 using namespace std;
 
-void LoginUI::login(FILE* in_fp, FILE* out_fp, vector<User> &user, User* nowUser, int &nowUserIndex){
+void LoginUI::login(FILE* in_fp, FILE* out_fp, vector<User> &user, User* nowUser, int &nowUserIndex)
+{
     string id;
     string password;
                                         

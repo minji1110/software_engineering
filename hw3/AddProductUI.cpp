@@ -3,7 +3,8 @@
 #include "AddProductUI.h"
 #include "AddProduct.h"
 
-void AddProductUI::createNewProduct(FILE* in_fp, FILE* out_fp,User* user){
+void AddProductUI::createNewProduct(FILE* in_fp, FILE* out_fp,User* user)
+{
 
     string productName;
     string companyName;

@@ -1,4 +1,5 @@
-class InquirySoldProductsUI{
+class InquirySoldProductsUI
+{
     public:
         void showSoldProducts(FILE* ,vector<Product>);
 };

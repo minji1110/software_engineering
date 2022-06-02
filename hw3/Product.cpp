@@ -1,6 +1,7 @@
 #include "Product.h"
 
-void Product::createProduct(string productName, string companyName, int price, int quantity){
+void Product::createProduct(string productName, string companyName, int price, int quantity)
+{
     this->productName=productName;
     this->companyName=companyName;
     this->price=price;
@@ -9,26 +10,32 @@ void Product::createProduct(string productName, string companyName, int price, i
     this->salesQuantity=0;
 }
 
-string Product::getProductName(){
+string Product::getProductName()
+{
     return this->productName;
 }
 
-string Product::getCompanyName(){
+string Product::getCompanyName()
+{
     return this->companyName;
 }
 
-int Product::getPrice(){
+int Product::getPrice()
+{
     return this->price;
 }
 
-int Product::getSalesQuantity(){
+int Product::getSalesQuantity()
+{
     return this->salesQuantity;
 }
 
-int Product::getRemainingQuantity(){
+int Product::getRemainingQuantity()
+{
     return this->remainingQuantity;
 }
 
-int Product::getSatisfiction(){
+int Product::getSatisfiction()
+{
     return this->satisfiction;
 }

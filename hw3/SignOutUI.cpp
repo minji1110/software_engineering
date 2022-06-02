@@ -6,7 +6,8 @@
 
 using namespace std;
 
-void SignOutUI::signOut(FILE* out_fp, vector<User> &user, User* nowUser, int &nowUserIndex){
+void SignOutUI::signOut(FILE* out_fp, vector<User> &user, User* nowUser, int &nowUserIndex)
+{
     SignOut *signOut = new SignOut();
     signOut->signOut(user, nowUser, nowUserIndex);
     

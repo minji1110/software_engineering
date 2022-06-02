@@ -2,7 +2,8 @@
 #include <vector>
 #include "Product.h"
 
-class ProductCollection{
+class ProductCollection
+{
     private:
         vector <Product> salesProducts;
     

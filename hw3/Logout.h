@@ -3,7 +3,8 @@
 #include <vector>
 #include "User.h"
 
-class Logout{
+class Logout
+{
     public:
         void logout(User *nowUser);
 };

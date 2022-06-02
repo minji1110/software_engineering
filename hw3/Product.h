@@ -14,6 +14,9 @@ private:
     int satisfiction;       
 
 public:
+    static bool compareProductName(Product &p1, Product &p2) {  
+        return (p1.productName < p2.productName);  
+    }  
     string getProductName();
     string getCompanyName();
     int getPrice();

@@ -3,7 +3,8 @@
 #include "Product.h"
 #include "InquirySoldProductsUI.h"
 
-void InquirySoldProductsUI::showSoldProducts(FILE* out_fp, vector<Product> products){
+void InquirySoldProductsUI::showSoldProducts(FILE* out_fp, vector<Product> products)
+{
     
     vector<Product>::iterator product;
 

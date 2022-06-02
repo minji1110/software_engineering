@@ -64,7 +64,8 @@ void User::addNewSalesProduct(string productName, string companyName, int price,
     전달 인자 : 없음
     반환 인자 : 판매중인 상품 리스트
 */
-vector<Product> User::getSalesProducts(){
+vector<Product> User::getSalesProducts()
+{
     return this->salesProductCollection.getSalesProducts();
 }
 
@@ -74,6 +75,7 @@ vector<Product> User::getSalesProducts(){
     전달 인자 : 없음
     반환 인자 : 판매 완료 상품 리스트
 */
-vector<Product> User::getSoldProducts(){
+vector<Product> User::getSoldProducts()
+{
     return this->salesProductCollection.getSoldProducts();
 }

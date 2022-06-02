@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include "User.h"
 
-class AddProductUI{
+class AddProductUI
+{
     public:
         void createNewProduct(FILE* in_fp, FILE* out_fp,User* user);
 };

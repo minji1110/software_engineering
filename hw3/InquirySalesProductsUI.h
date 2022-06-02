@@ -1,6 +1,7 @@
 #pragma once 
 
-class InquirySalesProductsUI{
+class InquirySalesProductsUI
+{
     public:
         void showSalesProducts(FILE* ,vector<Product>);
 };
