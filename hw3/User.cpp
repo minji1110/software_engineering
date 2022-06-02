@@ -90,3 +90,7 @@ vector<Product> User::getSalesEstimations()
 {
     return this->salesProductCollection.estimateProduct();
 } 
+vector<Product>User::getBoughtProducts()
+{
+    return this->boughtProductCollection.getBoughtProducts();
+}

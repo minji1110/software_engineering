@@ -7,6 +7,6 @@
 class AddSatisfactionUI
 {
 public:
-	void addSatisfaction(FILE*, FILE*, vector<User>*);
+	void addSatisfaction(FILE*, FILE*, vector<User>&);
 };
 

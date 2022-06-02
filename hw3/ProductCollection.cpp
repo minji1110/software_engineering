@@ -91,8 +91,15 @@ vector<Product> ProductCollection::estimateProduct()
     
     //전체 상품에 대해 평균 구매만족도를 계산, 설정한다.
     for (product = allProducts.begin(); product != allProducts.end(); ++product){   
-        int averageSatisfiction = int(product->getTotalSatisfiction() / (product->getSalesQuantity()));
-        product->setAverageSatisfiction(averageSatisfiction);
+        if (product->getSalesQuantity() == 0)
+        {
+            product->setAverageSatisfiction(0);
+        }
+        else{
+            int averageSatisfiction = int(product->getTotalSatisfiction() / (product->getSalesQuantity()));
+            product->setAverageSatisfiction(averageSatisfiction);
+        }
+     
     }
     return allProducts;
 } 

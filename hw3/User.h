@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include "ProductCollection.h"
+#include "BoughtProductCollection.h"
 
 using namespace std;
 
@@ -13,6 +14,7 @@ private:
     string id;              // 아이디
     string password;        // 비밀번호
     ProductCollection salesProductCollection; // 판매 상품 목록
+    BoughtProductCollection boughtProductCollection;
 
 public:
     // 생성자
@@ -37,4 +39,5 @@ public:
     vector<Product> getSalesProducts();   // 판매 상품 조회
     vector<Product> getSoldProducts();    // 판매 완료 의류 조회
     vector<Product> getSalesEstimations(); // 상품 판매 통계
+    vector<Product> getBoughtProducts();
 };

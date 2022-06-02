@@ -1,4 +1,5 @@
 // 헤더 선언
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <vector>
 #include "User.h"
@@ -14,6 +15,11 @@
 #include "InquirySalesProducts.h"
 #include "InquirySoldProducts.h"
 #include "EstimateProducts.h"
+#include "SearchProducts.h"
+#include "SearchProductsUI.h"
+#include "AddSatisfaction.h"
+#include "AddSatisfactionUI.h"
+#include "InquiryBoughtProducts.h"
 
 // 상수 선언
 #define MAX_STRING 32
@@ -102,12 +108,30 @@ void doTask(){
                 }
                 break;
             }
-            case 4:{
-                // 4.1 상품 정보 검색
-                // 4.2 상품 구매
-                // 4.3 상품 구매 내역 조회
-                // 4.4 상품 구매 만족도 평가
+            case 4: {
+                switch (menu_level_2) {
+                case 1: {  // 4.1 상품 정보 검색
+                    SearchProductsUI* searchProductUI = new SearchProductsUI;
+                    searchProductUI->putProductName(in_fp, out_fp, user);
+                    break;
+                }
+                case 2: {    // 4.2 상품 구매
+                    break;
+                }
+                case 3: {  
+                    InquiryBoughtProducts* inquiryBoughtProducts = new InquiryBoughtProducts(out_fp, nowUser);
+                    // 4.3 상품 구매 내역 조회
+                    break;
+                }
+                case 4: {  
+                    AddSatisfactionUI* addSatisfactionUI = new AddSatisfactionUI();
+                    addSatisfactionUI->addSatisfaction(in_fp, out_fp, user);
+                    // 4.4 상품 구매 만족도 평가
 
+                    break;
+                }
+                }
+              break;
             }
             case 5:{
                 switch(menu_level_2){

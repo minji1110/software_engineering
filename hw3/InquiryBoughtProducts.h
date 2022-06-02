@@ -1,6 +1,6 @@
 #pragma once 
 #include <stdio.h>
-
+#include "User.h"
 class InquiryBoughtProducts
 {
 public:

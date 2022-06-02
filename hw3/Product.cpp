@@ -79,3 +79,7 @@ void Product::setAverageSatisfiction(int averageSatisfiction)
     this->averageSatisfiction = averageSatisfiction;
 }
 
+string Product::getSellerID()
+{
+    return this->sellerID;
+}

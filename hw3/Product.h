@@ -8,6 +8,7 @@ class Product
 private:
     string productName;    
     string companyName;     
+    string sellerID;
     int price;              
     int salesQuantity;      
     int remainingQuantity;  
@@ -20,6 +21,7 @@ private:
 public:
     string getProductName();
     string getCompanyName();
+    string getSellerID();
     int getPrice();
     int getSalesQuantity();
     int getRemainingQuantity();

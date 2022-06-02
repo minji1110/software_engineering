@@ -6,6 +6,6 @@
 class AddSatisfaction
 {
 public:
-	Product addSatisfaction(string, int, vector<User>*);
+	string addSatisfaction(string name, int satisfiction, vector<User>* user);
 };
 

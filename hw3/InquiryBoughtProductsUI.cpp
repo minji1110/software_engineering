@@ -2,22 +2,22 @@
 #include <vector>
 #include <stdio.h>
 #include "Product.h"
-
+#include "InquiryBoughtProducts.h"
 
 /*
-    í•¨ìˆ˜ ì´ë¦„ : InquiryBoughtProductsUI::showBoughtProducts
-    ê¸°ëŠ¥ : íŒë§¤ ì˜ë¥˜ ìƒí’ˆ ëª©ë¡ì˜ ìƒí’ˆëª…, ì œì‘íšŒì‚¬ëª…, ê°€ê²©, ìˆ˜ëŸ‰ì„ output.txtì— ì¶œë ¥í•œë‹¤.
-    ì „ë‹¬ ì¸ì : ì¶œë ¥ íŒŒì¼ í¬ì¸í„°, íŒë§¤ ì˜ë¥˜ ìƒí’ˆ ëª©ë¡
-    ë°˜í™˜ ì¸ì : ì—†ìŒ
+    ÇÔ¼ö ÀÌ¸§ : InquiryBoughtProductsUI::showBoughtProducts
+    ±â´É : ±¸¸ÅÇÑ »óÇ°ÀÇ ÆÇ¸ÅÀÚID, »óÇ°¸í, Á¦ÀÛÈ¸»ç¸í, °¡°İ, ¼ö·®, Æò±Õ ¸¸Á·µµ¸¦ output.txt¿¡ Ãâ·ÂÇÑ´Ù.
+    Àü´Ş ÀÎÀÚ : Ãâ·Â ÆÄÀÏ Æ÷ÀÎÅÍ, ÆÇ¸Å ÀÇ·ù »óÇ° ¸ñ·Ï
+    ¹İÈ¯ ÀÎÀÚ : ¾øÀ½
 */
 void InquiryBoughtProductsUI::showBoughtProducts(FILE* out_fp, vector<Product> products)
 {
 
     vector<Product>::iterator product;
 
-    fprintf(out_fp, "4.2. ï¿½Ç¸ï¿½ ï¿½ï¿½Ç° ï¿½ï¿½È¸\n");
+    fprintf(out_fp, "4.3. ±¸¸ÅÇÑ »óÇ° Á¶È¸\n");
     for (product = products.begin(); product != products.end(); ++product)
     {
-        fprintf(out_fp, "> %s %s %d %d\n", product->getProductName().c_str(), product->getCompanyName().c_str(), product->getPrice(), product->getRemainingQuantity());
+        fprintf(out_fp, "> %s %s %d %d\n", product->getProductName(), product->getCompanyName(), product->getPrice(), product->getRemainingQuantity());
     }
 }
