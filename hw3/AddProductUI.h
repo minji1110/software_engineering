@@ -5,5 +5,5 @@
 class AddProductUI
 {
     public:
-        Product* createNewProduct(FILE* in_fp, FILE* out_fp,User* user);
+        void createNewProduct(FILE* in_fp, FILE* out_fp,User* user);
 };
