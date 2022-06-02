@@ -15,25 +15,21 @@ using namespace std;
 전달 인자 : 상품명, 벡터포인터
 반환 인자 : 해당Product
 */
-Product  SearchProducts::getProductDetail(string name, vector<User> *user) {
+Product  SearchProducts::getProductDetail(string name, vector<User> &user) {
 
-    string productname = name;
  
     vector<Product>::iterator iteratorProduct;
     vector<User>::iterator iteratorUser;
     Product k;
-
-    for(iteratorUser = user->begin(); iteratorUser != user->end(); iteratorUser++){
-        vector<Product> product = iteratorUser->getSalesProducts();
-        for (iteratorProduct = product.begin(); iteratorProduct != product.end(); iteratorProduct++)
-        {
-            if (iteratorProduct->getProductName() == productname)
-                k = *iteratorProduct;
-                return *iteratorProduct;
-                break;
+    
+    for (int i = 0; i < user.size(); i++) {
+        vector<Product> products = user[i].getSalesProducts();
+        for (int j = 0; j < products.size(); j++ ){
+            Product product = products[j];
+            if (product.getProductName() == name)
+                return product;
             
         }
     }
     return k;
-  
 }

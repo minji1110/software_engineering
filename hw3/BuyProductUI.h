@@ -2,11 +2,12 @@
 #include "stdio.h"
 #include <vector>
 #include "User.h""
+#include "Product.h"
 
 
 class BuyProductUI
 {
-	void buyproduct(FILE*, vector<User>);
+	void buyProduct( FILE*, vector<User>, Product*);
 
 };
 
