@@ -13,14 +13,14 @@
 반환 인자 : 없음
 */
 
-void SearchProductsUI::putProductName(FILE* in_fp, FILE* out_fp, vector<User>& user, int &i, int &j) {
+void SearchProductsUI::putProductName(FILE* in_fp, FILE* out_fp, vector<User>& user, int &sellerIndex, int &productIndex) {
     string sellerID, productName, companyName;
     int price, quantity, satisfiction=0;
 
     fscanf(in_fp, "%s ", productName.c_str());
 
     SearchProducts *searchProducts = new SearchProducts(); 
-     Product product =searchProducts->getProductDetail(productName, user, i, j);
+     Product product =searchProducts->getProductDetail(productName, user, sellerIndex, productIndex);
      sellerID = product.getSellerID();
     companyName = product.getCompanyName();
     price = product.getPrice();
