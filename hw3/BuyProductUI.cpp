@@ -2,14 +2,14 @@
 #include "BuyProduct.h"
 
 /*
-	ÇÔ¼ö ÀÌ¸§ : BuyProductUI::buyProduct
-	±â´É : ÆÇ¸ÅÀÚID, »óÇ°¸íÀ» Ãâ·ÂÇÑ´Ù.
-	Àü´Þ ÀÎÀÚ : Ãâ·Â ÆÄÀÏ Æ÷ÀÎÅÍ, ÆÇ¸ÅÀÚID »óÇ°¸í:string
-	¹ÝÈ¯ ÀÎÀÚ : ¾øÀ½
+	ï¿½Ô¼ï¿½ ï¿½Ì¸ï¿½ : BuyProductUI::buyProduct
+	ï¿½ï¿½ï¿½ : ï¿½Ç¸ï¿½ï¿½ï¿½ID, ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+	ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½Ç¸ï¿½ï¿½ï¿½ID ï¿½ï¿½Ç°ï¿½ï¿½:string
+	ï¿½ï¿½È¯ ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½
 */
 void BuyProductUI::buyProduct(FILE* out_fp, string sellerID, string productName)
 {
-    fprintf(out_fp, "4.2. »óÇ° ±¸¸Å\n");
-        fprintf(out_fp, "> %s %s \n", sellerID, productName);
+    fprintf(out_fp, "4.2. ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½\n");
+        fprintf(out_fp, "> %s %s \n", sellerID.c_str(), productName.c_str());
     }
 

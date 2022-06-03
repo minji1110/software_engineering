@@ -10,27 +10,27 @@
 using namespace std;
 
 /*
-ÇÔ¼ö ÀÌ¸§ : getProductDetail
-±â´É : »óÇ°¸íÀ» ÀÔ·ÂÇÏ¸é ÇØ´ç»óÇ°À» Ã£¾Æ ¹ÝÈ¯ÇÑ´Ù.
-Àü´Þ ÀÎÀÚ : »óÇ°¸í, º¤ÅÍÆ÷ÀÎÅÍ
-¹ÝÈ¯ ÀÎÀÚ : ÇØ´çProduct
+ï¿½Ô¼ï¿½ ï¿½Ì¸ï¿½ : getProductDetail
+ï¿½ï¿½ï¿½ : ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¸ï¿½ ï¿½Ø´ï¿½ï¿½Ç°ï¿½ï¿½ Ã£ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½Ç°ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½È¯ ï¿½ï¿½ï¿½ï¿½ : ï¿½Ø´ï¿½Product
 */
-Product  SearchProducts::getProductDetail(string name, vector<User> &user, int & sellerIndex, int & productIndex) {
+Product*  SearchProducts::getProductDetail(string name, vector<User> &user, int & sellerIndex,vector<Product>& allProducts, Product* searchedProduct) {
 
-    Product k;
-    
-    for (int i = 0; i < user.size(); i++) {
-        vector<Product> products = user[i].getSalesProducts();
-        for (int j = 0; j < products.size(); j++ ){
-            Product product = products[j];
-            if (product.getProductName() == name)
-            {
-                sellerIndex = i;
-                productIndex = j;
-                return product;
+    Product* matchedProduct=NULL;
+    vector<Product>::iterator iteratorProduct;
+    string productName=name.c_str();
+
+     for(iteratorProduct=allProducts.begin(); iteratorProduct!=allProducts.end();++iteratorProduct){
+            string compareName=iteratorProduct->getProductName().c_str();
+
+            if ((compareName.compare(productName)==0) && iteratorProduct->getRemainingQuantity() != 0){
+
+                matchedProduct=&(*iteratorProduct);
+                *searchedProduct=*matchedProduct;
+                return matchedProduct;
             }
-            
         }
-    }
-    return k;
+    
+    return matchedProduct;
 }

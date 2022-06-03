@@ -39,6 +39,8 @@ vector <User> user; //전체 회원 리스트
 User* nowUser = new User(); //현재 로그인한 회원
 int nowUserIndex;   //현재 로그인한 회원의 index
 int sellerIndex;    //판매자 index
+vector <Product> allProducts;   //현재 등록된 모든 상품
+Product* searchedProduct= new Product();
 int productIndex; //  상품 index
 
 
@@ -98,7 +100,8 @@ void doTask(){
                 switch(menu_level_2){
                     case 1:{  // 3.1 판매 의류 등록
                         AddProductUI* addProductUI = new AddProductUI();
-                        addProductUI -> createNewProduct(in_fp,out_fp,nowUser);
+                        Product* newProduct=addProductUI -> createNewProduct(in_fp,out_fp,nowUser);
+                        allProducts.push_back(*newProduct);
                         break;
                     }
                     case 2:{  // 3.2 등록 상품 조회 
@@ -116,23 +119,21 @@ void doTask(){
                 switch (menu_level_2) {
                 case 1: {  // 4.1 상품 정보 검색
                     SearchProductsUI* searchProductUI = new SearchProductsUI;
-                    searchProductUI->putProductName(in_fp, out_fp, user, sellerIndex,productIndex);
+                    searchProductUI->putProductName(in_fp, out_fp, user, sellerIndex, allProducts, searchedProduct);
                     break;
                 }
                 case 2: {    // 4.2 상품 구매
-                    BuyProduct* buyProduct = new BuyProduct(out_fp, user, sellerIndex, productIndex);
+                    BuyProduct* buyProduct = new BuyProduct(out_fp, nowUser,searchedProduct);
                     break;
                 }
-                case 3: {  
+                case 3: {  // 4.3 상품 구매 내역 조회
                     InquiryBoughtProducts* inquiryBoughtProducts = new InquiryBoughtProducts(out_fp, nowUser);
-                    // 4.3 상품 구매 내역 조회
                     break;
                 }
-                case 4: {  
+                case 4: {   // 4.4 상품 구매 만족도 평가
+
                     AddSatisfactionUI* addSatisfactionUI = new AddSatisfactionUI();
                     addSatisfactionUI->addSatisfaction(in_fp, out_fp, user);
-                    // 4.4 상품 구매 만족도 평가
-
                     break;
                 }
                 }

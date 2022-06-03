@@ -51,17 +51,20 @@ void User::getUser(string id, string password, vector<User> &user, User* nowUser
     전달 인자 : 상품명, 제작회사명, 가격, 수량
     반환 인자 : 없음
 */
-void User::addNewSalesProduct(string productName, string companyName, int price, int quantity)
+Product* User::addNewSalesProduct(string productName, string companyName, int price, int quantity)
 {
     Product* newProduct=new Product();
     newProduct->createProduct(productName, companyName, id, price, quantity);
     this->salesProductCollection.addNewSalesProduct(*newProduct);
+
+    return newProduct;
 }
-void User::addNewBoughtProduct(string productName, string companyName, int price, int quantity)
+
+void User::addNewBoughtProduct(Product* product)
 {
-    Product* newProduct = new Product();
-    newProduct->createProduct(productName, companyName, id, price, quantity);
-    this->boughtProductCollection.addNewBoughtProduct(*newProduct);
+    // Product* newProduct = new Product();
+    // newProduct->createProduct(productName, companyName, id, price, quantity);
+    this->boughtProductCollection.addNewBoughtProduct(*product);
 
 }
 

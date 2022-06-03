@@ -10,7 +10,7 @@ using namespace std;
     전달 인자 : 상품명, 제작회사명, 가격, 수량
     반환 인자 : 없음
 */
-void AddProduct::addNewSalesProduct(User* user,string productName, string companyName, int price, int quantity)
+Product* AddProduct::addNewSalesProduct(User* user,string productName, string companyName, int price, int quantity)
 {
-    user->addNewSalesProduct(productName,companyName,price,quantity);
+    return user->addNewSalesProduct(productName,companyName,price,quantity);
 }

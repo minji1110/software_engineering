@@ -7,27 +7,30 @@
 #include "SearchProducts.h"
 
 /*
-ÇÔ¼ö ÀÌ¸§ : putProductName
-±â´É : »óÇ°¸íÀ» ÀÔ·ÂÇÏ¸é »óÇ°Á¤º¸¸¦ Ãâ·ÂÇÑ´Ù..
-Àü´Þ ÀÎÀÚ : ÀÐ±âÆÄÀÏ Æ÷ÀÎÅÍ, ¾²±âÆÄÀÏ Æ÷ÀÎÅÍ, userº¤ÅÍ ÁÖ¼Ò
-¹ÝÈ¯ ÀÎÀÚ : ¾øÀ½
+ï¿½Ô¼ï¿½ ï¿½Ì¸ï¿½ : putProductName
+ï¿½ï¿½ï¿½ : ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¸ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½..
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, userï¿½ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½
+ï¿½ï¿½È¯ ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½
 */
 
-void SearchProductsUI::putProductName(FILE* in_fp, FILE* out_fp, vector<User>& user, int &sellerIndex, int &productIndex) {
+void SearchProductsUI::putProductName(FILE* in_fp, FILE* out_fp, vector<User>& user, int &sellerIndex, vector<Product>& allProducts, Product* searchedProduct) {
     string sellerID, productName, companyName;
     int price, quantity, satisfiction=0;
 
     fscanf(in_fp, "%s ", productName.c_str());
 
     SearchProducts *searchProducts = new SearchProducts(); 
-     Product product =searchProducts->getProductDetail(productName, user, sellerIndex, productIndex);
-     sellerID = product.getSellerID();
-    companyName = product.getCompanyName();
-    price = product.getPrice();
-     quantity = product.getRemainingQuantity();
-       satisfiction = product.getSatisfiction();
+    Product* product =searchProducts->getProductDetail(productName, user, sellerIndex, allProducts, searchedProduct);
+
+    fprintf(out_fp, "4.1 ìƒí’ˆ ì •ë³´ ê²€ìƒ‰\n");
+
+    if(!(product==NULL)){
+      sellerID = product->getSellerID();
+      companyName = product->getCompanyName();
+      price = product->getPrice();
+      quantity = product->getRemainingQuantity();
+      satisfiction = product->getSatisfiction();
     
-        fprintf(out_fp, "4.1 »óÇ° °Ë»ö\n");
-        fprintf(out_fp, "> %s %s %s %d %d %d\n", sellerID.c_str(), productName.c_str(), companyName.c_str(), price, quantity, satisfiction);
-   
+      fprintf(out_fp, "> %s %s %s %d %d %d\n", sellerID.c_str(), productName.c_str(), companyName.c_str(), price, quantity, satisfiction);
+    }
 };

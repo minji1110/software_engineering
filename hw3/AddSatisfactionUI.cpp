@@ -3,10 +3,10 @@
 #include "AddSatisfaction.h"
 using namespace std;
 
-/*ÇÔ¼ö ÀÌ¸§ : AddSatisfactionUI::addSatisfaction
-±â´É : ±¸¸Å¸¸Á·µµ¸¦ Product¿¡ Ãß°¡ÇÑ´Ù.
-Àü´Þ ÀÎÀÚ : ÀÔ·Â ÆÄÀÏ Æ÷ÀÎÅÍ, Ãâ·Â ÆÄÀÏ Æ÷ÀÎÅÍ, user ÁÖ¼Ò
-¹ÝÈ¯ ÀÎÀÚ : ¾øÀ½
+/*ï¿½Ô¼ï¿½ ï¿½Ì¸ï¿½ : AddSatisfactionUI::addSatisfaction
+ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Productï¿½ï¿½ ï¿½ß°ï¿½ï¿½Ñ´ï¿½.
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : ï¿½Ô·ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, user ï¿½Ö¼ï¿½
+ï¿½ï¿½È¯ ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½
 
 */
 void AddSatisfactionUI::addSatisfaction(FILE* in_fp, FILE* out_fp, vector<User>& user) {
@@ -18,8 +18,7 @@ void AddSatisfactionUI::addSatisfaction(FILE* in_fp, FILE* out_fp, vector<User>&
 	AddSatisfaction* addsatisfaction = new AddSatisfaction();
 
 	sellerID = addsatisfaction->addSatisfaction(productname, satisfaction, &user);
-	fprintf(out_fp, "4.4 ±¸¸Å¸¸Á·µµ Æò°¡\n");
+	fprintf(out_fp, "4.4 ìƒí’ˆ êµ¬ë§¤ë§Œì¡±ë„ í‰ê°€\n");
 	fprintf(out_fp, "> %s %s %d\n", sellerID.c_str(), productname.c_str(), satisfaction);
-
 
 }

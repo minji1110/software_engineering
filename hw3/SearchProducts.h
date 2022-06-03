@@ -8,7 +8,7 @@
 
 class SearchProducts {
 public:
-	Product getProductDetail(string name, vector<User>&, int&, int&) ;
+	Product* getProductDetail(string name, vector<User>&, int&,vector<Product>&, Product*) ;
 	
 
 };

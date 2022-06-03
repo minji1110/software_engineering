@@ -5,24 +5,33 @@
 
 
 /*
-	ÇÔ¼ö ÀÌ¸§ : BuyProduct::BuyProduct
-	±â´É : °Ë»öÇÑ »óÇ°ÀÇ Á¤º¸¸¦ ¹Þ¾Æ¿À°í ³²Àº¼ö·® --, ±¸¸Å¸ñ·Ï¿¡ Ãß°¡ÇÑ´Ù.
-	Àü´Þ ÀÎÀÚ : Ãâ·Â ÆÄÀÏ Æ÷ÀÎÅÍ, User::vector[*], »óÇ°À§Ä¡ Á¤¼ö
-	¹ÝÈ¯ ÀÎÀÚ : ¾øÀ½
+	ï¿½Ô¼ï¿½ ï¿½Ì¸ï¿½ : BuyProduct::BuyProduct
+	ï¿½ï¿½ï¿½ : ï¿½Ë»ï¿½ï¿½ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¾Æ¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ --, ï¿½ï¿½ï¿½Å¸ï¿½Ï¿ï¿½ ï¿½ß°ï¿½ï¿½Ñ´ï¿½.
+	ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, User::vector[*], ï¿½ï¿½Ç°ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½È¯ ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½
 */
-BuyProduct::BuyProduct(FILE* out_fp, vector<User>& user, int i, int j) {
+BuyProduct::BuyProduct(FILE* out_fp, User* nowUser, Product* searchedProduct) {
 
 	string sellerID, productName, companyname;
-	int price, quantity;
+	sellerID=searchedProduct->getSellerID().c_str();
+	productName = searchedProduct->getProductName().c_str();
 
+	Product* foundProduct;
+	vector<Product> salesProducts=nowUser->getSalesProducts();
+	
+	vector<Product>::iterator iteratorProduct;
+     for(iteratorProduct=salesProducts.begin(); iteratorProduct!=salesProducts.end(); ++iteratorProduct){
+            string compareName=iteratorProduct->getProductName().c_str();
 
-	vector<Product> product = user[i].getSalesProducts();
-	productName = product[j].getProductName();
+            if ((compareName.compare(productName)==0)){	
+				cout<<"found name="<<compareName<<endl;
+				foundProduct = &(*iteratorProduct);
+        }
+	 }
+	searchedProduct->setQuantity();
+	foundProduct->setQuantity();
 
-	price = product[j].getPrice();
-	quantity = product[j].getRemainingQuantity();
-	product[j].setQuantity();
-	user[i].addNewBoughtProduct(productName, companyname, price, quantity);
+	nowUser->addNewBoughtProduct(searchedProduct);
 
 	BuyProductUI* buyProductUI = new BuyProductUI();
 	buyProductUI->buyProduct(out_fp, sellerID, productName);

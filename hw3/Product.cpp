@@ -86,7 +86,7 @@ string Product::getSellerID()
 }
 
 void Product::setQuantity() {
-    this->salesQuantity++;
-    this->remainingQuantity--;
-
+    this->salesQuantity=this->salesQuantity+1;
+    this->remainingQuantity=this->remainingQuantity-1;
+    this->setTotalSalesPrice(this->price);
 }

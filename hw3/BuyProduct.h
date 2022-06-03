@@ -5,9 +5,7 @@ class BuyProduct
 {
 
 public:
-	BuyProduct(FILE* , vector<User>& , int i, int j);
-		
-	
+	BuyProduct(FILE* , User* , Product* );
 
 };
 

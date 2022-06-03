@@ -5,19 +5,19 @@
 #include "InquiryBoughtProducts.h"
 
 /*
-    ÇÔ¼ö ÀÌ¸§ : InquiryBoughtProductsUI::showBoughtProducts
-    ±â´É : ±¸¸ÅÇÑ »óÇ°ÀÇ ÆÇ¸ÅÀÚID, »óÇ°¸í, Á¦ÀÛÈ¸»ç¸í, °¡°Ý, ¼ö·®, Æò±Õ ¸¸Á·µµ¸¦ output.txt¿¡ Ãâ·ÂÇÑ´Ù.
-    Àü´Þ ÀÎÀÚ : Ãâ·Â ÆÄÀÏ Æ÷ÀÎÅÍ, ÆÇ¸Å ÀÇ·ù »óÇ° ¸ñ·Ï
-    ¹ÝÈ¯ ÀÎÀÚ : ¾øÀ½
+    ï¿½Ô¼ï¿½ ï¿½Ì¸ï¿½ : InquiryBoughtProductsUI::showBoughtProducts
+    ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ ï¿½Ç¸ï¿½ï¿½ï¿½ID, ï¿½ï¿½Ç°ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½È¸ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ output.txtï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+    ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½Ç¸ï¿½ ï¿½Ç·ï¿½ ï¿½ï¿½Ç° ï¿½ï¿½ï¿½
+    ï¿½ï¿½È¯ ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½
 */
 void InquiryBoughtProductsUI::showBoughtProducts(FILE* out_fp, vector<Product> products)
 {
 
     vector<Product>::iterator product;
 
-    fprintf(out_fp, "4.3. ±¸¸ÅÇÑ »óÇ° Á¶È¸\n");
+    fprintf(out_fp, "4.3. ìƒí’ˆ êµ¬ë§¤ ë‚´ì—­ ì¡°íšŒ\n");
     for (product = products.begin(); product != products.end(); ++product)
     {
-        fprintf(out_fp, "> %s %s %d %d\n", product->getProductName(), product->getCompanyName(), product->getPrice(), product->getRemainingQuantity());
+        fprintf(out_fp, "> %s %s %s %d %d %d\n", product->getSellerID().c_str(),product->getProductName().c_str(), product->getCompanyName().c_str(), product->getPrice(), product->getRemainingQuantity(), product->getAverageSatisfiction());
     }
 }
