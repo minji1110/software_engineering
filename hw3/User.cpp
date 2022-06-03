@@ -57,6 +57,13 @@ void User::addNewSalesProduct(string productName, string companyName, int price,
     newProduct->createProduct(productName, companyName, id, price, quantity);
     this->salesProductCollection.addNewSalesProduct(*newProduct);
 }
+void User::addNewBoughtProduct(string productName, string companyName, int price, int quantity)
+{
+    Product* newProduct = new Product();
+    newProduct->createProduct(productName, companyName, id, price, quantity);
+    this->boughtProductCollection.addNewBoughtProduct(*newProduct);
+
+}
 
 /*
     함수 이름 : User::getSalesProducts

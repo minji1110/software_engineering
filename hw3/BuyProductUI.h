@@ -7,7 +7,8 @@
 
 class BuyProductUI
 {
-	void buyProduct( FILE*, vector<User>, Product*);
+public:
+	void buyProduct( FILE*,string, string);
 
 };
 

@@ -1,14 +1,8 @@
 #include "BuyProductUI.h"
 #include "BuyProduct.h"
-void BuyProductUI::buyProduct(FILE* out_fp, vector<User> user, Product* product)
+void BuyProductUI::buyProduct(FILE* out_fp, string sellerID, string productName)
 {
-	string productname;
-	
-	BuyProduct *buyproduct = new BuyProduct();
-	buyproduct.buyProduct()
-	fprintf(out_fp, "4.2 惑前 备概\n");
-	fprintf(out_fp, "");
+    fprintf(out_fp, "4.2. 惑前 备概\n");
+        fprintf(out_fp, "> %s %s \n", sellerID, productName);
+    }
 
-
-
-}

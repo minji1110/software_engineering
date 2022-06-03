@@ -29,6 +29,7 @@ public:
     int getTotalSalesPrice();
     int getTotalSatisfiction();
     int getAverageSatisfiction();
+    void setQuantity();
     void setTotalSalesPrice(int salesPrice);
     void setTotalSatisfiction(int satisfiction);
     void setAverageSatisfiction(int averageSatisfiction);

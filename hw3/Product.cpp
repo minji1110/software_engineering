@@ -84,3 +84,9 @@ string Product::getSellerID()
 {
     return this->sellerID;
 }
+
+void Product::setQuantity() {
+    this->salesQuantity++;
+    this->remainingQuantity--;
+
+}

@@ -1,11 +1,11 @@
 #pragma once
 #include "User.h"
-
+#include <vector>
 class BuyProduct
 {
 
-
-	void buyProduct(vector<User>);
+public:
+	BuyProduct(FILE* , vector<User>& , int i, int j);
 		
 	
 

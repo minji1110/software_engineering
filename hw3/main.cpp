@@ -21,6 +21,7 @@
 #include "AddSatisfactionUI.h"
 #include "InquiryBoughtProducts.h"
 #include "BuyProductUI.h"
+#include "BuyProduct.h"
 // 상수 선언
 #define MAX_STRING 32
 #define INPUT_FILE_NAME "input.txt"
@@ -37,8 +38,8 @@ FILE* in_fp, *out_fp;
 vector <User> user; //전체 회원 리스트
 User* nowUser = new User(); //현재 로그인한 회원
 int nowUserIndex;   //현재 로그인한 회원의 index
-Product* nowProduct = new Product(); // 현재 구매중인 상품
-int nowProductIndex; // 현재 상품 index
+int sellerIndex;    //판매자 index
+int productIndex; //  상품 index
 
 
 int main()
@@ -115,11 +116,11 @@ void doTask(){
                 switch (menu_level_2) {
                 case 1: {  // 4.1 상품 정보 검색
                     SearchProductsUI* searchProductUI = new SearchProductsUI;
-                    searchProductUI->putProductName(in_fp, out_fp, user);
+                    searchProductUI->putProductName(in_fp, out_fp, user, sellerIndex,productIndex);
                     break;
                 }
                 case 2: {    // 4.2 상품 구매
-                 
+                    BuyProduct* buyProduct = new BuyProduct(out_fp, user, sellerIndex, productIndex);
                     break;
                 }
                 case 3: {  
